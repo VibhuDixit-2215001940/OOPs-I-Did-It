@@ -68,65 +68,92 @@
 
 // -----------------------------PARAMETERIZED CONSTRUCTOR--------------
 // class Learn {
-//     int x, y;
+// int x, y;
 
-//     Learn(int a, int b) {
-//         x = a;
-//         y = b;
-//         System.out.println(a + b);
-//     }
+// Learn(int a, int b) {
+// x = a;
+// y = b;
+// System.out.println(a + b);
+// }
 
-//     Learn(int a, String str) {
-//         System.out.println(a + " " + str);
-//     }
+// Learn(int a, String str) {
+// System.out.println(a + " " + str);
+// }
 // }
 
 // class Test {
-//     public static void main(String[] args) {
-//         Learn a = new Learn(10, 20);
-//         Learn b = new Learn(10, "Vibhu");
-//     }
+// public static void main(String[] args) {
+// Learn a = new Learn(10, 20);
+// Learn b = new Learn(10, "Vibhu");
+// }
 // }
 // --------------------COPY Constructor---------------------
 // class A {
-//     int a, b;
+// int a, b;
 
-//     A(int x, int y) {
-//         a = x;
-//         b = y;
-//         System.out.println(a + b);
-//     }
+// A(int x, int y) {
+// a = x;
+// b = y;
+// System.out.println(a + b);
+// }
 
-//     A(A ref) {
-//         a = ref.a;
-//         b = ref.b;
-//         System.out.println(a + b);
-//     }
+// A(A ref) {
+// a = ref.a;
+// b = ref.b;
+// System.out.println(a + b);
+// }
 // }
 
 // class Test {
-//     public static void main(String[] args) {
-//         A r = new A(10, 20);
-//         A r2 = new A(r);
-//     }
+// public static void main(String[] args) {
+// A r = new A(10, 20);
+// A r2 = new A(r);
 // }
-//------------------PRIVATE CONSTRUCTOR----------------------
+// }
+// ------------------PRIVATE CONSTRUCTOR----------------------
+// class A {
+// int b;
 
+// private A(int a) {
+// b = 100;
+// System.out.println(a);
+// }
+
+// public void main(String[] args) {
+// System.out.println(b);
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// A a = new A(10);
+// }
+// }
+
+// ------------------------CONSTRUCTOR OVERLOADING_-----------
 class A {
-    int b;
+    double a;
+    boolean f;
 
-    private A(int a) {
-        b = 100;
+    A(int a) {
         System.out.println(a);
     }
 
-    public void main(String[] args) {
-        System.out.println(b);
+    A(int a, String str) {
+        System.out.println(a + " " + str);
+    }
+
+    A(double x, boolean y) {
+        a = x;
+        f = y;
     }
 }
 
 class Test {
     public static void main(String[] args) {
-        A a = new A(10);
+        A r = new A(10);
+        A r2 = new A(10, "Vibhu");
+        A r3 = new A(10.5, false);
+        System.out.println(r3.a + " " + r3.f);
     }
 }
