@@ -130,30 +130,50 @@
 // }
 // }
 
-// ------------------------CONSTRUCTOR OVERLOADING_-----------
-class A {
-    double a;
-    boolean f;
+// // ------------------------CONSTRUCTOR OVERLOADING_-----------
+// class A {
+// double a;
+// boolean f;
 
-    A(int a) {
-        System.out.println(a);
-    }
+// A(int a) {
+// System.out.println(a);
+// }
 
-    A(int a, String str) {
-        System.out.println(a + " " + str);
-    }
+// A(int a, String str) {
+// System.out.println(a + " " + str);
+// }
 
-    A(double x, boolean y) {
-        a = x;
-        f = y;
-    }
-}
+// A(double x, boolean y) {
+// a = x;
+// f = y;
+// }
+// }
 
-class Test {
-    public static void main(String[] args) {
-        A r = new A(10);
-        A r2 = new A(10, "Vibhu");
-        A r3 = new A(10.5, false);
-        System.out.println(r3.a + " " + r3.f);
-    }
-}
+// class Test {
+// public static void main(String[] args) {
+// A r = new A(10);
+// A r2 = new A(10, "Vibhu");
+// A r3 = new A(10.5, false);
+// System.out.println(r3.a + " " + r3.f);
+// }
+// }
+
+// --------------------STATIC BLOCK------------------
+// class Test {
+// public static void main(String[] args) {
+// Test t = new Test();
+// }
+
+// Test() {
+// System.out.println(3);
+// }
+
+// {
+// System.out.println(2);
+// }
+// static {
+// System.out.println(1);
+// }
+// }
+
+// ---------------------INSTANCE BLOCK-----------------
