@@ -67,3 +67,24 @@
 // }
 
 // -----------------------------PARAMETERIZED CONSTRUCTOR--------------
+class Learn {
+    int x, y;
+
+    Learn(int a, int b) {
+        x = a;
+        y = b;
+        System.out.println(a + b);
+    }
+
+    Learn(int a, String str) {
+        System.out.println(a + " " + str);
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        Learn a = new Learn(10, 20);
+        Learn b = new Learn(10, "Vibhu");
+    }
+}
+// --------------------COPY Constructor---------------------
