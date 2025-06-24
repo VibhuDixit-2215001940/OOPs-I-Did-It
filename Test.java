@@ -177,13 +177,31 @@
 // }
 
 // ---------------------INSTANCE BLOCK-----------------
-class Test {
-    {
-        System.out.println(1);
-    }
+// class Test {
+// {
+// System.out.println(1);
+// }
 
-    public static void main(String[] args) {
-        // Test t = new Test(); //Without object creation it cn't be executed!!
-        System.out.println(2);
-    }
-}
+// public static void main(String[] args) {
+// // Test t = new Test(); //Without object creation it cn't be executed!!
+// System.out.println(2);
+// }
+// }
+
+// --------------Instance & Static Block --------------------
+// class Test {
+// int a = 10;
+// static String str = "Vibhu";
+// {
+// System.out.println(a + " " + str);
+// }
+// static {
+// System.out.println(a + " " + str);//Here static block only access static or
+// var created inside its block!!
+// }
+
+// public static void main(String[] args) {
+// Test t = new Test();
+// // System.out.println(a + " " + str);
+// }
+// }
