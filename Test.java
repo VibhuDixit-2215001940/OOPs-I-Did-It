@@ -205,3 +205,20 @@
 // // System.out.println(a + " " + str);
 // }
 // }
+
+// ------------------------RETURN TYPE--------------
+// class Test {
+// public static void main(String[] args) {
+// Test t = new Test();
+// System.out.println(a);//20
+// }
+
+// static int a = 10;
+// {
+// a = 20;
+// int b = 10;
+// System.out.println(a);//20
+// System.out.println("Omg");
+// return void;//Doesn't return anything
+// }
+// }
