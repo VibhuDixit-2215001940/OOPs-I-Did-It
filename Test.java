@@ -310,4 +310,65 @@
 // }
 // }
 
-// ----------------
+// ----------------MULTIPLE INHERITANCE(Java doesn't support)------------
+// class A{
+// void xyz(){
+// System.out.println("Mai kya karu abb !!");
+// }
+// }
+// class B{
+// void xyz(){
+// System.out.println("Mai kya karu abb !!");
+// }
+// }
+// class Test extends A,B{//Giving error
+// public static void main(String args[]){
+
+// }
+// }
+
+// -----------------HIERARCHICAL INHERITANCE------------------------
+// class Student {
+// int roll;
+// String name;
+
+// void display() {
+// System.out.println("I am a student!!");
+// }
+// }
+
+// class Ankit extends Student {
+// Ankit() {
+// roll = 10;
+// name = "Ankit";
+// }
+
+// void naam() {
+// System.out.println("Mera naam hai " + name + " " + roll);
+// }
+// }
+
+// class Parul extends Student {
+// Parul() {
+// roll = 69;
+// name = "Parul";
+// }
+
+// void naam() {
+// System.out.println("Mera naam hai " + name + " " + roll);
+// }
+// }
+
+// public class Test {
+// public static void main(String[] args) {
+// Parul p = new Parul();
+// p.display();
+// p.naam();
+
+// Ankit a = new Ankit();
+// a.display();
+// a.naam();
+// }
+// }
+
+// ---------------------
