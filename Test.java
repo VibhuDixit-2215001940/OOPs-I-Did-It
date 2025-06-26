@@ -222,3 +222,55 @@
 // return void;//Doesn't return anything
 // }
 // }
+
+// ----------------------INHERITANCE TYPES-------------
+// ----------------------SIMPLE INHERITENCE(1SP&1SC)-------------------
+// class A { // SUPER CLASS
+// int roll;
+// String name;
+
+// void display() {
+// System.out.println("Enter roll no. and name: ");
+// }
+// }
+
+// class Test extends A { // SUB CLASS
+// void put() {
+// roll = 10;
+// name = "Vibhu";
+// System.out.println(roll + " " + name);
+// }
+
+// public static void main(String[] args) {
+// Test t = new Test();// Object always made of subclass
+// t.display();// Can access methods of super class tooo
+// t.put();
+// }
+// }
+
+// ---------------SIMPLE INHERITENCE WITH PRIVATE MEM-----
+// Private memebers can't be access aoutside of superclass but protected can be
+// class A { // SUPER CLASS
+// protected int roll;
+// private String name;
+
+// void display() {
+// System.out.println("Enter roll no. and name: ");
+// }
+// }
+
+// class Test extends A { // SUB CLASS
+// void put() {
+// roll = 10;
+// name = "Vibhu";// WILL GIVE ERROR
+// System.out.println(roll + " " + name);
+// }
+
+// public static void main(String[] args) {
+// Test t = new Test();// Object always made of subclass
+// t.display();// Can access methods of super class tooo
+// t.put();
+// }
+// }
+
+// -----------------------
