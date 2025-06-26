@@ -371,4 +371,29 @@
 // }
 // }
 
-// ---------------------
+// ---------------------SUPER KEYWORD----------------------
+// class A {
+// int a = 10;
+// }
+
+// class B extends A {
+// int a;
+
+// B() {
+// a = 20;
+// }
+
+// void display() {
+// System.out.println(a);// It refers to same class var "a"
+// System.out.println(super.a);// Now it refers to super class var "a"
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// B t = new B();
+// t.display();
+// int a = 100;
+// System.out.println(super.a);//Can't be use in a static method!!
+// }
+// }
