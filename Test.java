@@ -424,3 +424,24 @@
 // Test t = new Test(20);
 // }
 // }
+
+// --------------------------THIS KEYWORD FOR CALLING DEFAULT CONSTRUCTOR--------
+class Test {
+    int a = 10;
+
+    Test() {
+        // a = 20;
+        System.out.println(a);
+    }
+
+    Test(int a) {
+        // this();
+        System.out.println(a);
+        this.a = a;
+        // this();//This will give error as
+    }
+
+    public static void main(String[] args) {
+        Test t = new Test(20);
+    }
+}
