@@ -273,4 +273,41 @@
 // }
 // }
 
-// -----------------------
+// -----------------------MULTILEVEL INHERITENCE (1SP & ManySC)------------
+// class Add {
+// int a = 10, b = 20;
+
+// void add() {
+// System.out.println("Addition: " + (a + b));
+// }
+// }
+
+// class Subtract extends Add {
+// void subtract() {
+// System.out.println("Subtraction: " + (b - a));
+// }
+// }
+
+// class Multiply extends Subtract {
+// void multiply() {
+// System.out.println("Multiply: " + (a * b));
+// }
+// }
+
+// class Divide extends Multiply {
+// void divide() {
+// System.out.println("Divide: " + (b / a));
+// }
+// }
+
+// class Test extends Divide {
+// public static void main(String[] args) {
+// Test t = new Test();
+// t.add();
+// t.subtract();
+// t.multiply();
+// t.divide();
+// }
+// }
+
+// ----------------
