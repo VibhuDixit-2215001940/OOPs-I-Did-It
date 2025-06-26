@@ -397,3 +397,30 @@
 // System.out.println(super.a);//Can't be use in a static method!!
 // }
 // }
+
+// ------------------------THIS KEYWORD--------------------
+// class Test {
+// void Test() {
+// System.out.println(this);// Test@4617c264
+// }
+
+// public static void main(String[] args) {
+// Test r = new Test();
+// System.out.println(r);// Test@4617c264
+// r.Test();
+// // System.out.println(this);//this can't be use in static method.
+// }
+// }
+
+// class Test {
+// int a = 10;
+
+// Test(int a) {
+// a = this.a;
+// System.out.println(a);
+// }
+
+// public static void main(String[] args) {
+// Test t = new Test(20);
+// }
+// }
