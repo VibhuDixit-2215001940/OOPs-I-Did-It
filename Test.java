@@ -496,24 +496,43 @@
 // }
 
 // -------------------ENCAPSULATION------------------------
-class B {
-    private int a;
+// class B {
+//     private int a;
 
-    public void setValue(int x) {
-        a = x;
-    }
+//     public void setValue(int x) {
+//         a = x;
+//     }
 
-    public int getValue() {
-        return a;
+//     public int getValue() {
+//         return a;
+//     }
+// }
+
+// class Test {
+//     public static void main(String[] args) {
+//         B t = new B();
+//         // t.a = 10;
+//         // System.out.println(t.a);
+//         t.setValue(100);
+//         System.out.println(t.getValue());
+//     }
+// }
+
+//-------------------ABSTRACT CLASS---------------
+abstract class A {
+    void display() {
+        System.out.println("Le kutte mai abstractt class use kar raha!!");
     }
+}
+
+class B extends A {
+
 }
 
 class Test {
     public static void main(String[] args) {
-        B t = new B();
-        // t.a = 10;
-        // System.out.println(t.a);
-        t.setValue(100);
-        System.out.println(t.getValue());
+        // A t = new A();// Cannot instantiate the type A
+        A t = new B();
+        t.display();
     }
 }
