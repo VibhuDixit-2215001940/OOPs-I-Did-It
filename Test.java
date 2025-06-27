@@ -425,49 +425,74 @@
 // }
 // }
 
-// --------------------------THIS KEYWORD FOR CALLING DEFAULT CONSTRUCTOR--------
+// --------------------------THIS KEYWORD FOR CALLING DEFAULT
+// CONSTRUCTOR--------
 // class Test {
-//     int a = 10;
+// int a = 10;
 
-//     Test() {
-//         // a = 20;
-//         System.out.println(a);
-//     }
-
-//     Test(int a) {
-//         // this();
-//         System.out.println(a);
-//         this.a = a;
-//         this();// This will give error as
-//     }
-
-//     public static void main(String[] args) {
-//         Test t = new Test(20);
-//     }
+// Test() {
+// // a = 20;
+// System.out.println(a);
 // }
 
-//------------------------------METHOD OVERLOADING---------------------
-//-----------------(Compile Time Polymorphism)----------------------
-class Test {
-    void add() {
-        int a = 10, b = 20;
-        System.out.println(a + b);
-    }
+// Test(int a) {
+// // this();
+// System.out.println(a);
+// this.a = a;
+// this();// This will give error as
+// }
 
-    int add(int a) {
-        int b = 10;
-        return a + b;
-    }
+// public static void main(String[] args) {
+// Test t = new Test(20);
+// }
+// }
 
-    String add(int a, int b) {
-        System.out.println(a + b);
-        return "Hello";
-    }
+// ------------------------------METHOD OVERLOADING---------------------
+// -----------------(Compile Time Polymorphism)----------------------
+// class Test {
+// void add() {
+// int a = 10, b = 20;
+// System.out.println(a + b);
+// }
 
-    public static void main(String[] args) {
-        Test t = new Test();
-        t.add();
-        System.out.println(t.add(10));
-        System.out.println(t.add(10, 20));
-    }
-}
+// int add(int a) {
+// int b = 10;
+// return a + b;
+// }
+
+// String add(int a, int b) {
+// System.out.println(a + b);
+// return "Hello";
+// }
+
+// public static void main(String[] args) {
+// Test t = new Test();
+// t.add();
+// System.out.println(t.add(10));
+// System.out.println(t.add(10, 20));
+// }
+// }
+
+// ----------------------METHOD OVERRIDING-------------------
+// -----------------(Runtime Polymorphism)-------------------
+// class A {
+// void display() {
+// System.out.println("Kya dekh raha hai bhadwe!!");
+// }
+// }
+
+// class B extends A {
+// // @Override
+// void display() {
+// System.out.println("Haan bhai kesse ho!!");
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// A t = new B();
+// t.display();
+// }
+// }
+
+// -------------------
