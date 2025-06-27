@@ -495,4 +495,25 @@
 // }
 // }
 
-// -------------------
+// -------------------ENCAPSULATION------------------------
+class B {
+    private int a;
+
+    public void setValue(int x) {
+        a = x;
+    }
+
+    public int getValue() {
+        return a;
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        B t = new B();
+        // t.a = 10;
+        // System.out.println(t.a);
+        t.setValue(100);
+        System.out.println(t.getValue());
+    }
+}
