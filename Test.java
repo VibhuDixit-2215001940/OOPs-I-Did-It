@@ -585,4 +585,36 @@
 // }
 // }
 
-// -----------------------------
+// -----------------------------INTERFACE--------------
+// import java.util.*;
+
+// interface client {
+// void input();
+
+// void output();
+// }
+
+// class Raju implements client {
+// String name;
+
+// public void input() {//SHOULD BE COMPULSORY A PUBLIC as in inter face methods
+// are by-default "public+final"
+// Scanner sc = new Scanner(System.in);
+// System.out.println("Naam likh bhadwe!!");
+// name = sc.next();
+// }
+
+// public void output() {//SHOULD BE COMPULSORY A PUBLIC
+// System.out.println("Tera naam hai bhadwa " + name);
+// }
+
+// }
+
+// public class Test {
+// public static void main(String[] args) {
+// Raju r = new Raju();
+// r.input();
+// r.output();
+// }
+
+// }
