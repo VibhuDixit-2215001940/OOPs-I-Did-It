@@ -497,42 +497,92 @@
 
 // -------------------ENCAPSULATION------------------------
 // class B {
-//     private int a;
+// private int a;
 
-//     public void setValue(int x) {
-//         a = x;
-//     }
+// public void setValue(int x) {
+// a = x;
+// }
 
-//     public int getValue() {
-//         return a;
-//     }
+// public int getValue() {
+// return a;
+// }
 // }
 
 // class Test {
-//     public static void main(String[] args) {
-//         B t = new B();
-//         // t.a = 10;
-//         // System.out.println(t.a);
-//         t.setValue(100);
-//         System.out.println(t.getValue());
-//     }
+// public static void main(String[] args) {
+// B t = new B();
+// // t.a = 10;
+// // System.out.println(t.a);
+// t.setValue(100);
+// System.out.println(t.getValue());
+// }
 // }
 
-//-------------------ABSTRACT CLASS---------------
-abstract class A {
-    void display() {
-        System.out.println("Le kutte mai abstractt class use kar raha!!");
-    }
-}
+// -------------------ABSTRACT CLASS---------------
+// abstract class A {
+// void display() {
+// System.out.println("Le kutte mai abstractt class use kar raha!!");
+// }
+// }
 
-class B extends A {
+// class B extends A {
 
-}
+// }
 
-class Test {
-    public static void main(String[] args) {
-        // A t = new A();// Cannot instantiate the type A
-        A t = new B();
-        t.display();
-    }
-}
+// class Test {
+// public static void main(String[] args) {
+// // A t = new A();// Cannot instantiate the type A
+// A t = new B();
+// t.display();
+// }
+// }
+
+// ----------------------ABSTRACT METHOD-------------------
+// abstract class Fruit {// As one method is abstract thus its compulsory to
+// made class also abstract
+// abstract public void taste();// Here we don't have specific fruit to tell its
+// taste thus make this abstract
+// // and in further code we canimplement it in sub class!!
+// }
+
+// class Apple extends Fruit {
+// @Override
+// public void taste() {
+// System.out.println("Meetha!!!");
+// }
+// }
+
+// public class Test {
+
+// public static void main(String[] args) {
+// Apple a = new Apple();
+// // Fruit f = new Fruit();//Can't create object of abstract class
+// a.taste();
+// }
+// }
+
+// // ------------------ABSTRACT METHOD(for diff code implementation)------
+// abstract class Add {
+// abstract public int add(int a, int b); // Abstract method
+// }
+
+// class AddWithoutPlus extends Add {
+// @Override
+// public int add(int a, int b) {
+// while (b != 0) {
+// int carry = a & b;
+// a = a ^ b;
+// b = carry << 1;
+// }
+// return a;
+// }
+// }
+
+// public class Test {
+// public static void main(String[] args) {
+// Add obj = new AddWithoutPlus();
+// System.out.println(obj.add(5, 7)); // Output: 12
+// }
+// }
+
+// -----------------------------
