@@ -943,3 +943,34 @@
 // System.gc(); // Request GC to run
 // }
 // }
+
+// ----------------------THROW--------------------------
+// public class Test {
+// public static void main(String[] args) {
+// int age = 15;
+// if (age < 18) {
+// throw new ArithmeticException("Not eligible to vote");
+// }
+// }
+// }
+
+// ----------------------THROWS-----------------------
+// import java.io.*;
+
+// public class Test {
+
+// void readFile() throws IOException {
+// FileReader fr = new FileReader("file.txt"); // Make sure file.txt exists
+// fr.read();
+// fr.close();
+// }
+
+// public static void main(String[] args) {
+// Test obj = new Test();
+// try {
+// obj.readFile();
+// } catch (IOException e) {
+// System.out.println("Handled: " + e);
+// }
+// }
+// }
