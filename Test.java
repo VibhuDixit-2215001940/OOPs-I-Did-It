@@ -897,3 +897,49 @@
 // System.out.println("End of main method.");
 // }
 // }
+
+// ----------------------------final--------------------------
+// final class A{
+// void m1(){
+// System.out.println("Abb mujhe koi extend nahi kar sakta!!");
+// }
+// }
+// class B extends A{//The type B cannot subclass the final class A
+
+// }
+// class Test{
+// public static void main(String[] args) {
+// final int A = 10;
+// // A = 200;//The final local variable A cannot be assigned. It must be blank
+// and not using a compound assignment
+// }
+// }
+
+// -----------------------------finally{}-------------------------
+// class Test {
+// public static void main(String[] args) {
+// try {
+// int a = 10 / 0;
+// } catch (Exception e) {
+// System.out.println("Exception caught");
+// } finally {
+// System.out.println("Finally block executed");
+// }
+
+// }
+// }
+
+// //------------------------------finalize()----------------------
+// class Test {
+// protected void finalize() {
+// System.out.println("finalize() called");
+// }
+// }
+
+// public class Main {
+// public static void main(String[] args) {
+// Test t = new Test();
+// t = null;
+// System.gc(); // Request GC to run
+// }
+// }
