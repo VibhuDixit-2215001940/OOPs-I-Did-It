@@ -655,45 +655,78 @@
 // }
 // }
 
-//-----------------INTERFACE JDK1.8(default,static)--------------
-interface A {
-    void m1();
+// -----------------INTERFACE JDK1.8(default,static)--------------
+// interface A {
+// void m1();
 
-    void m2();
+// void m2();
 
-    default void m3() {
-        System.out.println("I am created newly and don't need to implement in all sub class!!");
-    }
-}
+// default void m3() {
+// System.out.println("I am created newly and don't need to implement in all sub
+// class!!");
+// }
+// }
 
-class B implements A {
-    public void m1() {
-        System.out.println("B implements A in m1");
-    }
+// class B implements A {
+// public void m1() {
+// System.out.println("B implements A in m1");
+// }
 
-    public void m2() {
-        System.out.println("B implements A in m2");
-    }
-}
+// public void m2() {
+// System.out.println("B implements A in m2");
+// }
+// }
 
-class C implements A {
-    public void m1() {
-        System.out.println("C implements A in m1");
-    }
+// class C implements A {
+// public void m1() {
+// System.out.println("C implements A in m1");
+// }
 
-    public void m2() {
-        System.out.println("C implements A in m2");
-    }
-}
+// public void m2() {
+// System.out.println("C implements A in m2");
+// }
+// }
 
-class Test {
-    public static void main(String[] args) {
-        B b = new B();
-        b.m1();
-        b.m2();
-        C c = new C();
-        c.m1();
-        c.m2();
-        c.m3();
-    }
-}
+// class Test {
+// public static void main(String[] args) {
+// B b = new B();
+// b.m1();
+// b.m2();
+// C c = new C();
+// c.m1();
+// c.m2();
+// c.m3();
+// }
+// }
+
+// ------------------INTERFACE(static)------------------------
+// interface B {
+// static void m1() {// Has to implement in the same class
+// System.out.println("Mai intercae B ke m1 mai hoo!!");
+// }
+// }
+
+// class C implements B {
+// public static void m1() {
+// System.out.println("Bhadwe!!!!!!");
+// }
+// }
+
+// class A {
+// public static void m1() {
+// System.out.println("Mai class A ke m1 mai hoo!!");
+// }
+
+// public static void m2() {
+// System.out.println("Mai class A ke m2 mai hoo!!");
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// A.m1();// But sub class can implement it
+// A.m2();// Don't need to create object
+// B.m1();// Overriden to sub class is not allowed!!
+// C.m1();
+// }
+// }
