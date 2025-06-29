@@ -730,3 +730,26 @@
 // C.m1();
 // }
 // }
+
+// ----------------OVERRIDE ANOTATION-----------------
+// class A {
+// public void m1() {
+// System.out.println("Mai m1 mai hoo !!!");
+// }
+// }
+
+// class B extends A {
+// @Override
+// public void m1() {
+// System.out.println("Mai m1 mai hoo !!!");
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// B b = new B();
+// b.m1();
+// }
+// }
+
+// -------------------------
