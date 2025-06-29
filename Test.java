@@ -753,26 +753,48 @@
 // }
 
 // -------------------------COVARIENT RETURN TYPE-----------------
-class A {
-    A show() {
-        System.out.println("I am in A");
-        return this;// this refers to current object
-        // return new A(); will be same as upper
-    }
-}
+// class A {
+// A show() {
+// System.out.println("I am in A");
+// return this;// this refers to current object
+// // return new A(); will be same as upper
+// }
+// }
 
-class B extends A {
-    @Override
-    B show() {
-        super.show();
-        System.out.println("I am in B");
-        return new B();
-    }
-}
+// class B extends A {
+// @Override
+// B show() {
+// super.show();
+// System.out.println("I am in B");
+// return new B();
+// }
+// }
 
-class Test {
-    public static void main(String[] args) {
-        B b = new B();
-        b.show();
-    }
-}
+// class Test {
+// public static void main(String[] args) {
+// B b = new B();
+// b.show();
+// }
+// }
+
+// ----------------------var args-----------------------
+// class A {
+// void add(int... arr) {// Here arr is an 1D array
+// int sum = 0;
+// for (int x : arr) {
+// sum += x;
+// }
+// System.out.println(sum);
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// A a = new A();
+// // a.add(null);
+// a.add(10);
+// a.add(10, 20);
+// a.add(10, 20, 30);
+// a.add(10, 20, 30, 40);
+// }
+// }
