@@ -860,4 +860,11 @@
 // }
 // }
 
-// -----------------------------
+// -----------------------------unchecked exception-----------------
+class Test {
+    public static void main(String[] args) {
+        System.out.println(10 / 0);// we doesn't get any error or warniing before execeution
+        // We get error after execution "Exception in thread "main"
+        // java.lang.ArithmeticException: / by zero"
+    }
+}
