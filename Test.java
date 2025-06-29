@@ -832,15 +832,32 @@
 // }
 
 // ---------------------try catch finnaly--------------
-class Test {
-    public static void main(String[] args) {
-        String str = null;
-        try {
-            System.out.println(str.toLowerCase());
-        } catch (Exception e) {
-            System.out.println("Bhadwee");
-        } finally {
-            System.out.println("Mai toh chalunga hii");
-        }
-    }
-}
+// class Test {
+// public static void main(String[] args) {
+// String str = null;
+// try {
+// System.out.println(str.toLowerCase());
+// } catch (Exception e) {
+// System.out.println("Bhadwee");
+// } finally {
+// System.out.println("Mai toh chalunga hii");
+// }
+// }
+// }
+
+// --------------------------checked exception--------------
+
+// import java.io.FileReader;
+
+// class Test {
+// public static void main(String[] args) {
+// //Commonly occurred exception its like a protective warning error
+// //ex. ur mother asks u that admit card rakh lia so that exam center
+// pahunchakr kahi problem naa aa jaye
+// FileReader f = new FileReader("demo.txt");// Unhandled exception type
+// FileNotFoundException
+// System.out.println(f.read());
+// }
+// }
+
+// -----------------------------
