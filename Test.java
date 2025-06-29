@@ -974,3 +974,50 @@
 // }
 // }
 // }
+
+// -------------------------EXCEPTION PROPAGATION------------------
+// Here exception propagates from one method to other!!!
+// class Test {
+// public static void main(String[] args) {
+// m1();
+// }
+
+// public static void m1() {
+// m2();
+// }
+
+// public static void m2() {
+// m3();
+// }
+
+// public static void m3() {
+// System.out.println(10 / 0);
+// //Exception in thread "main" java.lang.ArithmeticException: / by zero
+// // at Test.m3(Test.java:993)
+// // at Test.m2(Test.java:989)
+// // at Test.m1(Test.java:985)
+// // at Test.main(Test.java:981)
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// try {
+// m1();
+// } catch (Exception e) {
+// System.out.println("error theek kar bhadwe");
+// }
+// }
+
+// public static void m1() {
+// m2();
+// }
+
+// public static void m2() {
+// m3();
+// }
+
+// public static void m3() {
+// System.out.println(10 / 0);// error theek kar bhadwe
+// }
+// }
