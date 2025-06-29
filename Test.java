@@ -861,10 +861,39 @@
 // }
 
 // -----------------------------unchecked exception-----------------
-class Test {
-    public static void main(String[] args) {
-        System.out.println(10 / 0);// we doesn't get any error or warniing before execeution
-        // We get error after execution "Exception in thread "main"
-        // java.lang.ArithmeticException: / by zero"
-    }
-}
+// class Test {
+// public static void main(String[] args) {
+// System.out.println(10 / 0);// we doesn't get any error or warniing before
+// execeution
+// // We get error after execution "Exception in thread "main"
+// // java.lang.ArithmeticException: / by zero"
+// }
+// }
+
+// /----------------------finalize method------------------------
+// class Demo {
+// int id;
+
+// Demo(int id) {
+// this.id = id;
+// }
+
+// @Override
+// protected void finalize() throws Throwable {
+// System.out.println("finalize() called for object with id: " + id);
+// }
+// }
+
+// public class Test {
+// public static void main(String[] args) {
+// Demo d1 = new Demo(1);
+// Demo d2 = new Demo(2);
+
+// d1 = null; // eligible for GC
+// d2 = null; // eligible for GC
+
+// System.gc(); // Request to JVM to run Garbage Collector
+
+// System.out.println("End of main method.");
+// }
+// }
