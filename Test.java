@@ -752,4 +752,27 @@
 // }
 // }
 
-// -------------------------
+// -------------------------COVARIENT RETURN TYPE-----------------
+class A {
+    A show() {
+        System.out.println("I am in A");
+        return this;// this refers to current object
+        // return new A(); will be same as upper
+    }
+}
+
+class B extends A {
+    @Override
+    B show() {
+        super.show();
+        System.out.println("I am in B");
+        return new B();
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        B b = new B();
+        b.show();
+    }
+}
