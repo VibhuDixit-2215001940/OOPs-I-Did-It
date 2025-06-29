@@ -32,11 +32,56 @@ Object-Oriented Programming helps make your code:
 
 ```mermaid
 flowchart TD
-    A[Class] --> B[Object]
-    B --> C[Encapsulation]
-    C --> D[Abstraction]
-    D --> E[Inheritance]
-    E --> F[Polymorphism]
+    A[OOPs Concepts]
+
+    A --> B[Class & Object Lifecycle]
+    B --> C[Instance Block]
+    B --> D[Static Block]
+    B --> E[Constructor Overloading]
+    B --> F[Private Constructor]
+
+    A --> G[Inheritance]
+    G --> H[Simple Inheritance]
+    G --> I[MultiLevel Inheritance]
+    G --> J[Hierarchical Inheritance]
+    G --> K[Super Keyword]
+    G --> L[This Keyword]
+    L --> M[Calling Default Constructor]
+
+    A --> N[Polymorphism]
+    N --> O[Method Overriding]
+    N --> P[Method Overloading]
+    N --> Q[Covariant Return Type]
+    N --> R[Override Annotation]
+    N --> S[Var-args]
+
+    A --> T[Abstraction]
+    T --> U[Abstract Class]
+    T --> V[Abstract Method]
+    T --> W[Interface]
+    W --> X[Interface JDK 1.8 - default & static]
+
+    A --> Y[Encapsulation]
+
+    A --> Z[SOLID Principles]
+
+    A --> AA[Static Confusion]
+    A --> AB[Instance Doesn’t Return]
+
+    A --> AC[Exception Handling]
+    AC --> AD[Intro to Exception Handling]
+    AC --> AE[Exception Hierarchy]
+    AC --> AF[try-catch-finally]
+    AC --> AG[Checked Exception]
+    AC --> AH[Unchecked Exception]
+    AC --> AI[final / finally / finalize]
+    AI --> AJ[finalize Method]
+    AC --> AK[throw / throws]
+    AC --> AL[Exception Propagation]
+
+    classDef blue fill:#DDF,stroke:#333,stroke-width:1px;
+    class A,G,T,AC blue;
+
 ```
 ---
 
