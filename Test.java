@@ -818,4 +818,17 @@
 // }
 // }
 
-// ------------------------
+// ------------------------Exception Heirarchy---------------
+// -----------------------NULLPOINTEREXCEPTION---------------------
+// class Test {
+// public static void main(String[] args) {
+// String str = null;
+// try {
+// System.out.println(str.toLowerCase());
+// } catch (Exception e) {
+// System.out.println("Bhadwee");
+// }
+// }
+// }
+
+// ---------------------
