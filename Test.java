@@ -618,3 +618,82 @@
 // }
 
 // }
+
+// -----------------INTERFACE VARS(public+static+final)-------------
+// interface A {
+// // int a;//Will give as it is by-default "final" thus have to declare and
+// // initialise at the same time
+// int a = 10;
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// System.out.println(A.a);// Can be access wiythout making an object thus
+// "static"
+// // Also it is available to use outside interface thus public
+// }
+// }
+
+// -----------------INTERFACE METHOD(public+abstract)-----------------
+// interface A {
+// void m1();
+// }
+
+// class B implements A {
+// // void m1() {//Cannot reduce the visibility of the inherited method from A
+// // System.out.println("Hello");
+// // }
+// public void m1(){
+// System.out.println("Hello");
+// }
+// }
+
+// class Test {
+// public static void main(String[] args) {
+// A a = new A();//Cannot instantiate the type A....as its abstract
+
+// }
+// }
+
+//-----------------INTERFACE JDK1.8(default,static)--------------
+interface A {
+    void m1();
+
+    void m2();
+
+    default void m3() {
+        System.out.println("I am created newly and don't need to implement in all sub class!!");
+    }
+}
+
+class B implements A {
+    public void m1() {
+        System.out.println("B implements A in m1");
+    }
+
+    public void m2() {
+        System.out.println("B implements A in m2");
+    }
+}
+
+class C implements A {
+    public void m1() {
+        System.out.println("C implements A in m1");
+    }
+
+    public void m2() {
+        System.out.println("C implements A in m2");
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        B b = new B();
+        b.m1();
+        b.m2();
+        C c = new C();
+        c.m1();
+        c.m2();
+        c.m3();
+    }
+}
