@@ -798,3 +798,24 @@
 // a.add(10, 20, 30, 40);
 // }
 // }
+
+// -------------------EXCEPTION HANDLING----------------------
+// class Test {
+// // public static void main(String[] args) {
+// // int a = 10, b = 0, c = 0;
+// // c = a / b;//Exception in thread "main" java.lang.ArithmeticException: / by
+// // zero
+// // System.out.println(c);
+// // }
+// public static void main(String[] args) {
+// int a = 10, b = 0, c = 0;
+// try {
+// c = a / b;
+// System.out.println(c);
+// } catch (Exception e) {
+// System.out.println(e);// java.lang.ArithmeticException: / by zero
+// }
+// }
+// }
+
+// ------------------------
